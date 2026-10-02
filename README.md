@@ -1,4 +1,4 @@
-# Debug API
+# Logging API
 
 ## Overview
 
@@ -197,7 +197,7 @@ printf_debug("Hello world !");
 
 By default, debug output have spacing.
 You may disable those with the macro `DEBUG_SPACING_FILE`, `DEBUG_SPACING_FUNCTION` and `DEBUG_SPACING_LINE`.
-Set these to 0 if you want to spacing.
+Set these to 0 if you want no spacing.
 You may like using environment variables, using [`.env`](.env)
 ```sh
 gcc example.c -DDEBUG -Wall $(sed -E 's/^(.+)/\-D\1/g' .env)
